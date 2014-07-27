@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			travel_student
+		</title>
+	</head>
+
+	<body>
+	
+	<h1>My African Adventures!</h1>
+
+    
+    <%
+  for (var i = 0; i < places.length; i++){
+  var place = places[i]
+  %>
+    <div>
+		<h2><%=place.name%> - <%=place.country%></h2>
+		<img src="/images/<%=place.image_name%>" alt=<%=place.name%>>
+		<h4><%=place.description%></h4>
+		<h4>Rating: <%=place.rating%> (out of 5)</h4>
+</div>
+    <%
+      }
+  %>
+
+  </body>
+</html>
